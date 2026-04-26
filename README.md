@@ -35,7 +35,7 @@ Coffeshop/
 ## Installation
 
 bash
-git clone https://github.com//Coffee-shop-advertising-website.git
+git clone https://github.com/VelissariosVVS/Coffee-shop-advertising-website.git
 cd Coffee-shop-advertising-website
 npm install
 
