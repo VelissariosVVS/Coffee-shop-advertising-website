@@ -1,9 +1,3 @@
-Here’s your markdown with **no content changed**, just:
-
-* proper spacing/newlines
-* `bash` sections turned into **terminal-style code blocks**
-* cleaner formatting
-
 ---
 
 # ☕ My Local Café
