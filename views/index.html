@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Warm and cozy local café. Fresh coffee, homemade pastries, and a friendly atmosphere.">
+    <meta property="og:title" content="My Local Café">
+    <meta property="og:description" content="Come for the coffee, stay for the vibe.">
+    <meta property="og:type" content="website">
+    <title>My Local Café | Cozy & Warm</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+    <!-- Mobile menu toggle -->
+    <div class="menu-toggle" id="mobile-menu">☕ Menu</div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="section hero">
+        <div class="hero-content">
+            <h1>Welcome to My Local Café</h1>
+            <p>Fresh coffee • Warm pastries • Cozy corners</p>
+            <a href="#menu" class="btn">See Our Menu →</a>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="section">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-category">
+                    <h3>Coffee & Drinks</h3>
+                    <ul>
+                        <li>Espresso — $3.00</li>
+                        <li>Latte — $4.50</li>
+                        <li>Cappuccino — $4.50</li>
+                        <li>Hot Chocolate — $4.00</li>
+                        <li>Fresh Mint Tea — $3.50</li>
+                    </ul>
+                </div>
+                <div class="menu-category">
+                    <h3>Breakfast</h3>
+                    <ul>
+                        <li>Avocado Toast — $8.50</li>
+                        <li>Croissant (plain/choc) — $4.00</li>
+                        <li>Greek Yogurt Bowl — $7.00</li>
+                        <li>Pancake Stack — $9.00</li>
+                    </ul>
+                </div>
+                <div class="menu-category">
+                    <h3>Lunch & Snacks</h3>
+                    <ul>
+                        <li>Quiche of the Day — $10.00</li>
+                        <li>Grilled Cheese — $7.50</li>
+                        <li>Hummus & Pita — $6.50</li>
+                        <li>Daily Soup — $6.00</li>
+                    </ul>
+                </div>
+                <div class="menu-category">
+                    <h3>Desserts</h3>
+                    <ul>
+                        <li>Brownie — $3.50</li>
+                        <li>Carrot Cake — $5.00</li>
+                        <li>Vegan Banana Bread — $4.50</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section alt-bg">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>My Local Café started in 2020 with a simple dream: a place where neighbors feel at home. We serve ethically sourced coffee, bake everything in-house, and leave a seat for everyone.</p>
+                <p><strong>Opening Hours:</strong><br>
+                Mon–Fri: 7:30 AM – 8:00 PM<br>
+                Sat: 8:00 AM – 8:00 PM<br>
+                Sun: 9:00 AM – 6:00 PM</p>
+                <p><strong>📍 Address:</strong><br>
+                123 Cozy Lane, Downtown, Your City</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">📸 Café corner</div>
+                <div class="gallery-item">☕ Latte art</div>
+                <div class="gallery-item">🥐 Fresh pastries</div>
+                <div class="gallery-item">🌿 Cozy interior</div>
+            </div>
+            <p class="gallery-note">(Placeholder images — replace with your own photos)</p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section alt-bg">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-wrapper">
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" rows="5" placeholder="Your Message..." required></textarea>
+                    <button type="submit">Send Message</button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+                <div class="map-placeholder">
+                    <h3>Find Us</h3>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316bbaf5b1%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1641234567890!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="250" 
+                        style="border:0; border-radius: 16px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                    <p>123 Cozy Lane, Downtown, Your City</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 My Local Café — Warmth in every cup.</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fef7e8;
+    color: #3e2a1f;
+    line-height: 1.6;
+}
+
+/* Colors: beige #fef7e8, brown #5c3a21, dark green #2d4a3e */
+nav {
+    background-color: #2d4a3e;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fef7e8;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d9b48b;
+}
+
+.menu-toggle {
+    display: none;
+    background: #2d4a3e;
+    color: #fef7e8;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.section {
+    padding: 4rem 2rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #2d4a3e;
+    text-align: center;
+}
+
+.hero {
+    background: linear-gradient(135deg, #5c3a21, #2d4a3e);
+    color: #fef7e8;
+    text-align: center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 1.8rem;
+    background-color: #d9b48b;
+    color: #3e2a1f;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.btn:hover {
+    background-color: #c9a06c;
+    transform: scale(1.02);
+}
+
+.menu-grid, .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.menu-category {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.menu-category:hover {
+    transform: translateY(-5px);
+}
+
+.menu-category h3 {
+    color: #5c3a21;
+    margin-bottom: 1rem;
+}
+
+.menu-category ul {
+    list-style: none;
+}
+
+.menu-category li {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.alt-bg {
+    background-color: #f5ede1;
+}
+
+.about-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gallery-item {
+    background: #2d4a3e;
+    color: #fef7e8;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 2rem;
+    transition: transform 0.2s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+    background: #5c3a21;
+}
+
+.gallery-note {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #7a5a44;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea {
+    padding: 0.8rem;
+    border: 1px solid #d9b48b;
+    border-radius: 12px;
+    font-family: inherit;
+    background: white;
+}
+
+button {
+    background-color: #2d4a3e;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #5c3a21;
+}
+
+.form-status {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.fake-map {
+    background: #ddd2c1;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 16px;
+    margin: 1rem 0;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #2d4a3e;
+    color: #fef7e8;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .menu-grid, .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
