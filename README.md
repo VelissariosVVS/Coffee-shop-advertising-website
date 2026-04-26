@@ -19,3 +19,56 @@ A warm, cozy café website with a working contact form that sends emails to the 
 - **Security:** dotenv for environment variables
 
 ## Project Structure
+
+
+Coffeshop/
+├── public/
+│   ├── css/styles.css
+│   └── js/script.js
+├── views/index.html
+├── server.js
+├── package.json
+├── .env (gitignored)
+└── .gitignore
+
+
+## Installation
+
+bash
+git clone https://github.com//Coffee-shop-advertising-website.git
+cd Coffee-shop-advertising-website
+npm install
+
+## Email Setup (Required for contact form)
+
+Create `.env` file:
+
+
+GMAIL_USER=your-email@gmail.com
+GMAIL_APP_PASSWORD=your-16-character-app-password
+
+
+**How to get Gmail App Password:**
+1. Enable 2-Step Verification on your Google Account
+2. Go to Security → App Passwords
+3. Generate password for "Mail" on "Windows Computer"
+
+## Run the Server
+
+bash
+node server.js
+
+
+Open `http://localhost:3000`
+
+## Contact Form
+
+Messages go directly to your Gmail inbox with the customer's email as reply-to address.
+
+## Development
+
+This project was built with AI assistance (ChatGPT) using prompt engineering for code generation, debugging, and documentation. All code was reviewed, tested, and customized by me.
+
+## License
+
+MIT
